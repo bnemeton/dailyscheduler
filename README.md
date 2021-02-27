@@ -6,3 +6,6 @@ The event slots are text areas, and clicking on them allows for the input of tex
 
 ## Screenshot
 ![alt text](screencap.png)
+
+## Deployed application
+The deployed application can be found here: https://bnemeton.github.io/dailyscheduler/
