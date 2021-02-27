@@ -22,7 +22,7 @@ $("document").ready(function() {
     // with stored values from local storage.
     events.each(function() {
         var thisHour = parseInt($( this ).parent().parent().attr("id"));
-        console.log(thisHour)
+        // console.log(thisHour)
         if (thisHour < currentHour) {
             $( this ).css("background-color", "pink")
         } else if (thisHour == currentHour) {
@@ -42,11 +42,13 @@ $("document").ready(function() {
 
     // onclick function to store textarea value in local storage.
     saveBtns.click( function () {
-        var id = $( this ).parent().attr('id');
+        // console.log("click");
+        var id = $( this ).parent().parent().attr('id');
         var id = "#" + id
         // console.log(id);
-        var text = $( id ).find( "textarea" ).val()
-        // console.log(text);
+        // console.log($( id ).children().eq(1).find( "textarea" ));
+        var text = $( id ).children().eq(1).find( "textarea" ).val()
+        console.log(text);
         localStorage.setItem(id, text);
     })
 
