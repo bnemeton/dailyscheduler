@@ -5,7 +5,7 @@ A simple daily planner to write events/tasks in, which saves the events to local
 The event slots are text areas, and clicking on them allows for the input of text. The save button on the right side will store the text in local storage. The text is persistent, and the text areas are populated with stored text on page load.
 
 ## Screenshot
-![alt text](screencap.png)
+![alt text](assets/screencap.png)
 
 ## Deployed application
 The deployed application can be found here: https://bnemeton.github.io/dailyscheduler/
